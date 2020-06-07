@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    input
+    <!-- <p>
+      {{message}}
+    </p>
+    <textarea v-model="message"></textarea>
+    <input type="text" v-model="message">
+    <pre>
+    {{$data}}
+    </pre> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data() {
+    return{
+      // message: '今日の19時にYouTubeあげるよ'
+      checked:false
+    }
   }
 }
 </script>
